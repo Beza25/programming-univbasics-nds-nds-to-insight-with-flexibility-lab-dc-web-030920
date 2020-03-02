@@ -52,28 +52,13 @@ def movies_with_director_key(name, movies_collection)
   # :director_name key. This addition can be done by using the provided
   # movie_with_director_name method
   
-  # test_set = [{e :title => "TestA", :director_name => nam}, {:title => "TestB"}]
+  # test_set = [{ :title => "TestA", :director_name => nam}, {:title => "TestB"}]
   puts "********"
   pp movies_collection
   new_arry = []
   movies_collection.each { |movie|
     new_arry << movie_with_director_name(name, movie)
-    
-    
-    
   }
-  # row = 0 
-  # new_arry = []
- 
-  # while row < movies_collection.length do
-  #   # binding.pry
-  #   # get the value of director_name form movie_with_director_name(name, movies_collection[row])
-  #   # add it to movies_collection[row]
-  
-  #   new_arry << movie_with_director_name(name, movies_collection[row])
-    
-  #   row += 1 
-  # end
   pp new_arry
   new_arry
 end
@@ -91,20 +76,6 @@ def gross_per_studio(collection)
   #
   # Hash whose keys are the studio names and whose values are the sum
   # total of all the worldwide_gross numbers for every movie in the input Hash
- 
-  # total = 0 
-  # movies = {}
-  # collection.each { |movie|
-  #   studio_name = movie[:studio_name]
-  #   if collection[studio_name]
-  #     total += movie[:worldwide_gross]
-  #     movie[:studio_name] = total
-  #   else
-  #     movies[studio_name] = movies
-  #   end
-  # }
-  # pp movies
-  # movies
  
   row = 0 
   movies = {}
